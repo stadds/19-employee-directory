@@ -1,0 +1,98 @@
+[
+  {
+    "empID": 1,
+    "first_name": "Esperanza",
+    "last_name": "Pugh",
+    "email": "esperanzapugh@quarx.com",
+    "phone": "+1 (932) 563-3237",
+    "job_title": "Manager",
+    "department": "IT",
+    "manager": "Snow Holmes",
+    "start_date": "2019-04-12",
+    "isActive": true
+  },
+  {
+    "empID": 2,
+    "first_name": "Ebony",
+    "last_name": "Mendez",
+    "email": "ebonymendez@quarx.com",
+    "phone": "+1 (819) 473-3516",
+    "job_title": "Sr Analyst",
+    "department": "Operations",
+    "manager": "Isabella Slater",
+    "start_date": "2004-09-13",
+    "isActive": true
+  },
+  {
+    "empID": 3,
+    "first_name": "Elisa",
+    "last_name": "Dodson",
+    "email": "elisadodson@quarx.com",
+    "phone": "+1 (887) 451-3210",
+    "job_title": "Sr Analyst",
+    "department": "Human Resources",
+    "manager": "Bernadine Hardy",
+    "start_date": "2011-01-17",
+    "isActive": false
+  },
+  {
+    "empID": 4,
+    "first_name": "Newton",
+    "last_name": "Haynes",
+    "email": "newtonhaynes@quarx.com",
+    "phone": "+1 (817) 563-3193",
+    "job_title": "Director",
+    "department": "Finance",
+    "manager": "Alice Francis",
+    "start_date": "2018-01-25",
+    "isActive": true
+  },
+  {
+    "empID": 5,
+    "first_name": "Beach",
+    "last_name": "Gomez",
+    "email": "beachgomez@quarx.com",
+    "phone": "+1 (871) 578-3683",
+    "job_title": "Sr Analyst",
+    "department": "Operations",
+    "manager": "Long Knox",
+    "start_date": "2014-08-18",
+    "isActive": true
+  },
+  {
+    "empID": 6,
+    "first_name": "Kent",
+    "last_name": "Cotton",
+    "email": "kentcotton@quarx.com",
+    "phone": "+1 (924) 465-3525",
+    "job_title": "Sr Analyst",
+    "department": "Legal",
+    "manager": "Blair Young",
+    "start_date": "2012-08-28",
+    "isActive": true
+  },
+  {
+    "empID": 7,
+    "first_name": "Kathy",
+    "last_name": "Boyer",
+    "email": "kathyboyer@quarx.com",
+    "phone": "+1 (935) 495-3365",
+    "job_title": "Analyst",
+    "department": "Finance",
+    "manager": "Holder Gilliam",
+    "start_date": "2008-02-20",
+    "isActive": true
+  },
+  {
+    "empID": 8,
+    "first_name": "Aurelia",
+    "last_name": "Romero",
+    "email": "aureliaromero@quarx.com",
+    "phone": "+1 (851) 494-3637",
+    "job_title": "Sr Analyst",
+    "department": "Legal",
+    "manager": "Carlene Moon",
+    "start_date": "2010-10-17",
+    "isActive": false
+  }
+]
