@@ -7,6 +7,5 @@
     "job_title",
     "department",
     "manager",
-    "start_date",
-    "isActive"
+    "start_date"
 ]
