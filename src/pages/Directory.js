@@ -7,19 +7,10 @@ import employees from "../empDirectory.json";
 import Table from "../components/Table";
 import TableHead from "../components/TableHead";
 import TableBody from "../components/TableBody";
-import TableRow from "../components/TableRow";
-import TableHeader from "../components/TableHeader";
-import TableData from "..//components/TableData";
-
-const headerRow = headers.map((header) => (
-  <Row>
-    <p>{header}</p>
-  </Row>
-));
+import Jumbotron from "../components/Jumbotron";
 
 class Directory extends Component {
   state = {
-    search: "",
     filter: "",
     headers,
     employees,
@@ -29,33 +20,20 @@ class Directory extends Component {
     return (
       <div>
         <Container>
-         
+        <Jumbotron
+          addClass="text-center"
+          title="Employee Directory"
+          desciption="Welcome to the show"
+          directions="Search for an employee"
+          btntext="Search"
+        ></Jumbotron>
         </Container>
+       
         <hr></hr>
         <Container fluid={true}>
           <Table>
-            <TableHead>
-              <TableRow>
-                {this.state.headers.map((header) => (
-                  <TableHeader scope="col" data={header}></TableHeader>
-                ))}
-              </TableRow>
-            </TableHead>
-            <TableBody>
-                {this.state.employees.map(employee => (
-                    <TableRow>
-                      <TableData data={employee.empID}></TableData>
-                      <TableData data={employee.first_name}></TableData>
-                      <TableData data={employee.last_name}></TableData>
-                      <TableData data={employee.email}></TableData>
-                      <TableData data={employee.phone}></TableData>
-                      <TableData data={employee.job_title}></TableData>
-                      <TableData data={employee.department}></TableData>
-                      <TableData data={employee.manager}></TableData>
-                      <TableData data={employee.start_date}></TableData>
-                    </TableRow>
-                ))}
-            </TableBody>
+            <TableHead headers={this.state.headers}></TableHead>
+            <TableBody employees={this.state.employees}></TableBody>
           </Table>
         </Container>
       </div>

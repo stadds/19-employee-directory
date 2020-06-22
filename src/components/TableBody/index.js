@@ -2,9 +2,24 @@ import React from "react";
 import "../masterstyle.css";
 
 function TableBody(props) {
-return (
-    <tbody>{props.children}</tbody>
-);
+  const { employees } = props;
+  return (
+    <tbody>
+      {employees.map((employee) => (
+        <tr key={employee.id}>
+          <td>{employee.empID}</td>
+          <td>{employee.first_name}</td>
+          <td>{employee.last_name}</td>
+          <td>{employee.email}</td>
+          <td>{employee.phone}</td>
+          <td>{employee.job_title}</td>
+          <td>{employee.department}</td>
+          <td>{employee.manager}</td>
+          <td>{employee.start_date}</td>
+        </tr>
+      ))}
+    </tbody>
+  );
 }
 
 export default TableBody;
