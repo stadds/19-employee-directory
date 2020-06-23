@@ -1,20 +1,18 @@
 import React from "react";
 import "../masterstyle.css";
 
-function Jumbotron({addClass,title,desciption,directions,btntext}) {
+function Jumbotron(props) {
   return (
-    <div className={`jumbotron ${addClass ? addClass : ""}`}>
-      <h1 className="display-4">{title}</h1>
+    <div className={`jumbotron ${props.addClass ? props.addClass : ""}`}>
+      <h1 className="display-4">{props.title}</h1>
       <p className="lead">
-       {desciption}
+       {props.desciption}
       </p>
       <hr className="my-4"></hr>
       <p>
-       {directions}
+       {props.directions}
       </p>
-      <a className="btn btn-primary btn-lg" href="#" role="button">
-       {btntext}
-      </a>
+      {props.children}
     </div>
   );
 }

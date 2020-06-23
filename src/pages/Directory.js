@@ -8,6 +8,7 @@ import Table from "../components/Table";
 import TableHead from "../components/TableHead";
 import TableBody from "../components/TableBody";
 import Jumbotron from "../components/Jumbotron";
+import FilterForm from "../components/FilterForm"
 import useSortableData from "../utils/useSortableData";
 
 function Directory() {
@@ -29,9 +30,10 @@ function Directory() {
           addClass="text-center"
           title="Employee Directory"
           desciption="Welcome to the show"
-          directions="Search for an employee"
-          btntext="Search"
-        ></Jumbotron>
+          directions="To Filter the table, please fill out the below form:"
+        >
+          <FilterForm headers={empHeaders}></FilterForm>
+        </Jumbotron>
       </Container>
 
       <hr></hr>
