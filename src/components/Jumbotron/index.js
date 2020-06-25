@@ -1,5 +1,5 @@
 import React from "react";
-import "../masterstyle.css";
+import "./style.css";
 
 function Jumbotron(props) {
   return (

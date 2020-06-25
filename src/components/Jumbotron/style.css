@@ -1,0 +1,33 @@
+@import url("../masterstyle.css");
+
+.jumbotron{
+    background-color: var(--primary);
+    color: white;
+}
+.btn-primary{
+    background-color: var(--secondary);
+    color: black;
+    border-color: var(--secondary);
+}
+
+.btn-primary:hover,.btn-primary:focus{
+    background-color: var(--highlight);
+    color: black;
+    border-color: var(--highlight);
+}
+
+.btn-danger{
+    background-color: var(--dark);
+    color: white;
+    border-color: var(--dark);
+}
+
+.btn-danger:hover,.btn-danger:focus{
+    background-color: var(--highlight);
+    color: black;
+    border-color: var(--highlight);
+}
+
+.display-4{
+    font-weight: bold;
+}

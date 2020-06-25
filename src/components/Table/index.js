@@ -1,9 +1,9 @@
 import React from "react";
-import "../masterstyle.css";
+import "./style.css";
 
 function Table(props) {
   return (
-    <div className="table-responsive">
+    <div className="table-striped table-responsive">
       <table className="table table-hover">{props.children}</table>
     </div>
   );

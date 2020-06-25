@@ -1,0 +1,9 @@
+@import url("../masterstyle.css");
+/* 
+.table-striped{
+    background-color: var(--highlight);
+} */
+
+.table-hover tr:hover{
+    background-color: var(--highlight);
+}

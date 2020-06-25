@@ -3,10 +3,20 @@ const SORT_ASC = "ascending";
 const SORT_DESC = "descending";
 
 const useSortableData = (employees, order = null) => {
+  const [empArr, setEmployees] = useState(employees);
   const [sortOrder, setSortOrder] = useState(order);
+  const [filterCol, setFilterCol] = useState("None");
+  const [filterData, setFilterData] = useState("");
+  
+  console.log(`order: ${order}`)
 
   const sortedEmployees = useMemo(() => {
-    let sortableEmps = [...employees];
+    let sortableEmps = [...empArr];
+
+    if(filterCol !== "None" && filterData !== ""){
+      // sortableEmps = sortableEmps.filter(emp => emp[filterCol].toUpperCase() === filterData.toUpperCase());
+      sortableEmps = sortableEmps.filter(emp => emp[filterCol].toUpperCase().includes(filterData.toUpperCase()));
+    }
 
     if (sortOrder !== null) {
       sortableEmps.sort((a, b) => {
@@ -20,9 +30,10 @@ const useSortableData = (employees, order = null) => {
       });
     }
     return sortableEmps;
-  }, [employees, sortOrder]);
+  }, [empArr, sortOrder,filterCol,filterData]);
 
   const requestSort = (key) => {
+    console.log(key);
     let direction = SORT_ASC;
     if (
       sortOrder &&
@@ -35,7 +46,12 @@ const useSortableData = (employees, order = null) => {
     setSortOrder({ key, direction });
   };
 
-  return {employees: sortedEmployees, requestSort, sortOrder};
+  const setFilters = (col,data) => {
+    setFilterCol(col);
+    setFilterData(data);
+  }
+
+  return {employees: sortedEmployees, requestSort, sortOrder,setFilters};
 };
 
 export default useSortableData;

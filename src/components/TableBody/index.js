@@ -1,8 +1,20 @@
 import React from "react";
-import "../masterstyle.css";
+import "./style.css"
 
 function TableBody(props) {
   const { employees } = props;
+
+  // let newEmpArr = [];
+
+  // if (props.filterHead !== "None" && (props.searchData !== "")) {
+  //   newEmpArr = employees.filter((employee) => {
+  //     return employee[props.filterHead] === props.searchData;
+  //   });
+  // }
+  // else{
+  //   newEmpArr = [...employees];
+  // }
+
   return (
     <tbody>
       {employees.map((employee) => (

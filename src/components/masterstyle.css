@@ -1,10 +1,12 @@
 :root {
-    --primary: ;
-    --secondary: ;
-    --third: ;
-    --ketchup: ;
-    --fifth: ;
-    --boxshadow: ;
-    --bodyfont: ;
+    --primary: #3b6978;
+    --secondary: #84a9ac;
+    --tertiary: #cae8d5;
+    --highlight: #cae8d5;
+    --boxshadow: #204051;
+    --bodyfont:  'Mukta', sans-serif;
     --jumbofont: ;
+    --background: #fffffe;
+    --dark: #204051;
   }
+
