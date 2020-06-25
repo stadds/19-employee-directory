@@ -35,7 +35,7 @@ thead button.descending::after {
   margin-left: .25em;
 }
 
-thead button:hover,thead button:focus{
+thead button:hover,thead button:focus,thead button:active{
     background-color: var(--highlight);
 }
 

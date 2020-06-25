@@ -10,7 +10,7 @@
     border-color: var(--highlight);
 }
 
-.btn-primary:hover,.btn-primary:focus{
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active{
     background-color: var(--secondary);
     color: black;
     border-color: var(--secondary);
@@ -22,7 +22,7 @@
     border-color: var(--dark);
 }
 
-.btn-danger:hover,.btn-danger:focus{
+.btn-danger:hover,.btn-danger:focus,.btn-danger:active{
     background-color: var(--secondary);
     color: black;
     border-color: var(--secondary);
