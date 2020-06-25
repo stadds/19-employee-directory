@@ -34,3 +34,8 @@ thead button.descending::after {
   /* display: inline-block; */
   margin-left: .25em;
 }
+
+thead button:hover,thead button:focus{
+    background-color: var(--highlight);
+}
+

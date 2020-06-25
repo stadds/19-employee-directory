@@ -16,7 +16,7 @@ function TableBody(props) {
   // }
 
   return (
-    <tbody>
+    <tbody className="text-center">
       {employees.map((employee) => (
         <tr key={employee.id}>
           <td>{employee.empID}</td>

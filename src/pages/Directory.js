@@ -74,7 +74,7 @@ function Directory() {
 
 
   return (
-    <div>
+    <div style={{fontFamily: "'Mukta', sans-serif",backgroundColor: "##e8e4e6", marginLeft: "1em", marginRight: "1em"}}>
       <Container>
         <Jumbotron
           addClass="text-center"
@@ -95,7 +95,7 @@ function Directory() {
       </Container>
 
       <hr></hr>
-      <Container >
+      <Container fluid={true}>
         <Row>
         <Table>
           <TableHead

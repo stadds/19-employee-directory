@@ -5,15 +5,15 @@
     color: white;
 }
 .btn-primary{
-    background-color: var(--secondary);
-    color: black;
-    border-color: var(--secondary);
-}
-
-.btn-primary:hover,.btn-primary:focus{
     background-color: var(--highlight);
     color: black;
     border-color: var(--highlight);
+}
+
+.btn-primary:hover,.btn-primary:focus{
+    background-color: var(--secondary);
+    color: black;
+    border-color: var(--secondary);
 }
 
 .btn-danger{
@@ -23,9 +23,9 @@
 }
 
 .btn-danger:hover,.btn-danger:focus{
-    background-color: var(--highlight);
+    background-color: var(--secondary);
     color: black;
-    border-color: var(--highlight);
+    border-color: var(--secondary);
 }
 
 .display-4{
