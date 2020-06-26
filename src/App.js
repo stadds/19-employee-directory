@@ -6,12 +6,11 @@ import Directory from "./pages/Directory";
 
 function App() {
   return (
-    // <Router>
-    //   <div>
-    //     <Route exact path="/" component={Directory}></Route>
-    //   </div>
-    // </Router>
-    <Directory></Directory>
+    <Router>
+      <div>
+        <Route path="/" component={Directory}></Route>
+      </div>
+    </Router>
   );
 }
 

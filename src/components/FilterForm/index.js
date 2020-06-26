@@ -24,14 +24,11 @@ function FilterForm(props) {
         </div>
         <input
           required
-          // ref={props.inputRef}
-          // onChange={props.handleInputChange}
           type="text"
           className="form-control"
           aria-label="Text to filter on."
           id="searchFilter"
           name="searchFilter"
-          // value={props.filterData}
         ></input>
       </div>
       <button

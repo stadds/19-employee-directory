@@ -13,12 +13,6 @@ import useSortandFilter from "../utils/useSortandFilter";
 
 function Directory() {
 
-  const selectRef = useRef();
-  const inputRef = useRef();
-  
-  // const [filterHeader, setFilterHeader] = useState("None");
-  // const [filterData, setFilterData] = useState("");
-  // const [filteredEmployees, setFilteredEmployees] = useState(empArr);
   const { employees, requestSort, sortOrder, setFilters } = useSortandFilter(empArr);
  
 
@@ -32,39 +26,16 @@ function Directory() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    // if (selectRef.current.value === "None" || inputRef.current.value === "") {
-    //   return;
-    // }
+   
     const colFilter = document.getElementById("colFilter").value;
     const searchData = document.getElementById("searchFilter").value;
-    // const searchData = select.options[select.selectedIndex].text
     console.log(`submit clicked: ${colFilter} , ${searchData}`);
     setFilters(colFilter,searchData);
-    // setFilterData(event.target.value);
-    // const newFilterArr = filteredEmployees.filter(emp => emp[selectRef] === inputRef.current.value);  
-    // console.log(selectRef.current.value);
-    // console.log(inputRef.current.value);
-    // setFilteredEmployees(newFilterArr);
+   
   };
 
-  // const handleFilterChange = ({target: {value}}) => {
-  //   // const toFilter = document.getElementById("headFilter").value;
-  //   setFilterHeader(value);
-  // };
-
-  // const hanldeInputChange = (event) => {
-  //   if (filterHeader === "None") {
-  //     return;
-  //   }
-  //   setFilterData(event.target.value);
-  // };
-
   const handleClearFilter = (event) => {
-    // setFilterHeader("None");
-    // document.getElementById("searchFilter").text = "";
-    // setFilteredEmployees(empArr);
-    // inputRef.current.value = "";
-    // selectRef.current.value = "Choose Column to Filter...";
+   
     document.getElementById("colFilter").value = "None";
     document.getElementById("searchFilter").value = "";
     console.log("clearbtn clicked");
@@ -83,12 +54,8 @@ function Directory() {
           directions="To Filter the table, please fill out the below form:"
         >
           <FilterForm
-            selectRef={selectRef}
-            inputRef={inputRef}
             headers={empHeaders}
             handleFormSubmit={handleFormSubmit}
-            // hanldeInputChange={hanldeInputChange}
-            // handleFilterChange={handleFilterChange}
             handleClearFilter={handleClearFilter}
           ></FilterForm>
         </Jumbotron>
@@ -105,8 +72,6 @@ function Directory() {
           ></TableHead>
           <TableBody
             employees={employees}
-            // filterHead={filterHeader}
-            // searchData={filterData}
           ></TableBody>
         </Table>
         </Row>
